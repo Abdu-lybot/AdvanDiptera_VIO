@@ -1,0 +1,8 @@
+prefix=/home/lybot/AdvanDiptera_VIO/devel/.private/commanding_node
+
+Name: commanding_node
+Description: Description of commanding_node
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

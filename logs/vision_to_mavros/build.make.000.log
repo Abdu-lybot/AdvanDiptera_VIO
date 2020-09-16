@@ -1,0 +1,8 @@
+[35m[1mScanning dependencies of target vision_to_mavros_node[0m
+[35m[1mScanning dependencies of target t265_fisheye_undistort_node[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/t265_fisheye_undistort_node.dir/src/t265_fisheye_undistort.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/vision_to_mavros_node.dir/src/vision_to_mavros.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable /home/lybot/AdvanDiptera_VIO/devel/.private/vision_to_mavros/lib/vision_to_mavros/vision_to_mavros_node[0m
+[ 75%] Built target vision_to_mavros_node
+[100%] [32m[1mLinking CXX executable /home/lybot/AdvanDiptera_VIO/devel/.private/vision_to_mavros/lib/vision_to_mavros/t265_fisheye_undistort_node[0m
+[100%] Built target t265_fisheye_undistort_node

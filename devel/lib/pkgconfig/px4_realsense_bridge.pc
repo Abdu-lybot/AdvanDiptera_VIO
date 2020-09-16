@@ -1,0 +1,1 @@
+/home/lybot/AdvanDiptera_VIO/devel/.private/px4_realsense_bridge/lib/pkgconfig/px4_realsense_bridge.pc

@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/lybot/AdvanDiptera_VIO/devel/.private/vision_to_mavros/setup.sh

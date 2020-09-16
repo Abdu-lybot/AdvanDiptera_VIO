@@ -1,0 +1,5 @@
+commanding_node
+/home/lybot/AdvanDiptera_VIO/devel/.private/commanding_node/cmake.lock /home/lybot/AdvanDiptera_VIO/devel/./cmake.lock
+/home/lybot/AdvanDiptera_VIO/devel/.private/commanding_node/lib/pkgconfig/commanding_node.pc /home/lybot/AdvanDiptera_VIO/devel/lib/pkgconfig/commanding_node.pc
+/home/lybot/AdvanDiptera_VIO/devel/.private/commanding_node/share/commanding_node/cmake/commanding_nodeConfig.cmake /home/lybot/AdvanDiptera_VIO/devel/share/commanding_node/cmake/commanding_nodeConfig.cmake
+/home/lybot/AdvanDiptera_VIO/devel/.private/commanding_node/share/commanding_node/cmake/commanding_nodeConfig-version.cmake /home/lybot/AdvanDiptera_VIO/devel/share/commanding_node/cmake/commanding_nodeConfig-version.cmake

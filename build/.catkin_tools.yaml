@@ -1,0 +1,6 @@
+devel_space: /home/lybot/AdvanDiptera_VIO/devel
+install: false
+install_space: /home/lybot/AdvanDiptera_VIO/install
+profile: default
+source_space: /home/lybot/AdvanDiptera_VIO/src
+workspace: /home/lybot/AdvanDiptera_VIO
