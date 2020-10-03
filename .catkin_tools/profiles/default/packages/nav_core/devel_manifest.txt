@@ -1,0 +1,5 @@
+navigation/nav_core
+/home/lybot/AdvanDiptera_VIO/devel/.private/nav_core/cmake.lock /home/lybot/AdvanDiptera_VIO/devel/./cmake.lock
+/home/lybot/AdvanDiptera_VIO/devel/.private/nav_core/lib/pkgconfig/nav_core.pc /home/lybot/AdvanDiptera_VIO/devel/lib/pkgconfig/nav_core.pc
+/home/lybot/AdvanDiptera_VIO/devel/.private/nav_core/share/nav_core/cmake/nav_coreConfig.cmake /home/lybot/AdvanDiptera_VIO/devel/share/nav_core/cmake/nav_coreConfig.cmake
+/home/lybot/AdvanDiptera_VIO/devel/.private/nav_core/share/nav_core/cmake/nav_coreConfig-version.cmake /home/lybot/AdvanDiptera_VIO/devel/share/nav_core/cmake/nav_coreConfig-version.cmake

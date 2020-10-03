@@ -1,5 +1,0 @@
-Symlinking /home/lybot/AdvanDiptera_VIO/devel/lib/vision_to_mavros/t265_fisheye_undistort_node
-Symlinking /home/lybot/AdvanDiptera_VIO/devel/lib/vision_to_mavros/vision_to_mavros_node
-Symlinking /home/lybot/AdvanDiptera_VIO/devel/lib/pkgconfig/vision_to_mavros.pc
-Symlinking /home/lybot/AdvanDiptera_VIO/devel/share/vision_to_mavros/cmake/vision_to_mavrosConfig-version.cmake
-Symlinking /home/lybot/AdvanDiptera_VIO/devel/share/vision_to_mavros/cmake/vision_to_mavrosConfig.cmake

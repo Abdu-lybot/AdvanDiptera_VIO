@@ -1,0 +1,1 @@
+/home/lybot/AdvanDiptera_VIO/devel/.private/carrot_planner/lib/pkgconfig/carrot_planner.pc

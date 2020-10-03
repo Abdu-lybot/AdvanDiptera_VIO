@@ -1,0 +1,1 @@
+/home/lybot/AdvanDiptera_VIO/devel/.private/base_local_planner/share/common-lisp/ros/base_local_planner/msg/_package.lisp

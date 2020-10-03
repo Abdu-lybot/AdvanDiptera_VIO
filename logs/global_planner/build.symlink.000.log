@@ -1,0 +1,12 @@
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/include/global_planner/GlobalPlannerConfig.h
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/lib/libglobal_planner.so
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/lib/python2.7/dist-packages/global_planner/__init__.py
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/lib/python2.7/dist-packages/global_planner/cfg/GlobalPlannerConfig.py
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/lib/python2.7/dist-packages/global_planner/cfg/__init__.py
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/lib/pkgconfig/global_planner.pc
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/lib/global_planner/planner
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/share/global_planner/cmake/global_plannerConfig-version.cmake
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/share/global_planner/cmake/global_plannerConfig.cmake
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/share/global_planner/docs/GlobalPlannerConfig.dox
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/share/global_planner/docs/GlobalPlannerConfig.wikidoc
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/share/global_planner/docs/GlobalPlannerConfig-usage.dox

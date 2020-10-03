@@ -1,0 +1,14 @@
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/include/amcl/AMCLConfig.h
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/lib/libamcl_map.so
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/lib/libamcl_sensors.so
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/lib/libamcl_pf.so
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/lib/python2.7/dist-packages/amcl/__init__.py
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/lib/python2.7/dist-packages/amcl/cfg/AMCLConfig.py
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/lib/python2.7/dist-packages/amcl/cfg/__init__.py
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/lib/amcl/amcl
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/lib/pkgconfig/amcl.pc
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/share/amcl/cmake/amclConfig-version.cmake
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/share/amcl/cmake/amclConfig.cmake
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/share/amcl/docs/AMCLConfig.dox
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/share/amcl/docs/AMCLConfig.wikidoc
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/share/amcl/docs/AMCLConfig-usage.dox

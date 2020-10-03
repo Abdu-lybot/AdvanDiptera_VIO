@@ -1,0 +1,1 @@
+/home/lybot/AdvanDiptera_VIO/devel/.private/navfn/share/roseus/ros/navfn/manifest.l

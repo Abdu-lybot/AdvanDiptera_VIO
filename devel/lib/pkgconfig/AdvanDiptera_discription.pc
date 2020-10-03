@@ -1,0 +1,1 @@
+/home/lybot/AdvanDiptera_VIO/devel/.private/AdvanDiptera_discription/lib/pkgconfig/AdvanDiptera_discription.pc

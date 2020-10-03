@@ -1,0 +1,1 @@
+/home/lybot/AdvanDiptera_VIO/devel/.private/global_planner/lib/pkgconfig/global_planner.pc

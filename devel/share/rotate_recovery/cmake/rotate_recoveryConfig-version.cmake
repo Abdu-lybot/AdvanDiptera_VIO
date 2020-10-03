@@ -1,0 +1,1 @@
+/home/lybot/AdvanDiptera_VIO/devel/.private/rotate_recovery/share/rotate_recovery/cmake/rotate_recoveryConfig-version.cmake

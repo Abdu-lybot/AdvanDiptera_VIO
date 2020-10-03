@@ -1,0 +1,4 @@
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/lib/libclear_costmap_recovery.so
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/lib/pkgconfig/clear_costmap_recovery.pc
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/share/clear_costmap_recovery/cmake/clear_costmap_recoveryConfig-version.cmake
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/share/clear_costmap_recovery/cmake/clear_costmap_recoveryConfig.cmake

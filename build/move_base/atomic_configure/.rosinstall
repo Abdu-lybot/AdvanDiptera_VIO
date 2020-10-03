@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/lybot/AdvanDiptera_VIO/devel/.private/move_base/setup.sh

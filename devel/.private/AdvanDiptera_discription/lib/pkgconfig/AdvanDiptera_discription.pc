@@ -1,0 +1,8 @@
+prefix=/home/lybot/AdvanDiptera_VIO/devel/.private/AdvanDiptera_discription
+
+Name: AdvanDiptera_discription
+Description: Description of AdvanDiptera_discription
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

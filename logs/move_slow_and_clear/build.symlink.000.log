@@ -1,0 +1,4 @@
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/lib/libmove_slow_and_clear.so
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/lib/pkgconfig/move_slow_and_clear.pc
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/share/move_slow_and_clear/cmake/move_slow_and_clearConfig-version.cmake
+Symlinking /home/lybot/AdvanDiptera_VIO/devel/share/move_slow_and_clear/cmake/move_slow_and_clearConfig.cmake

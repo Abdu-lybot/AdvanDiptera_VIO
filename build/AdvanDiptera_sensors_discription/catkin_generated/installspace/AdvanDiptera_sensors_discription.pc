@@ -1,0 +1,8 @@
+prefix=/home/lybot/AdvanDiptera_VIO/install
+
+Name: AdvanDiptera_sensors_discription
+Description: Description of AdvanDiptera_sensors_discription
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

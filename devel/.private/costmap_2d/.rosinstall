@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/lybot/AdvanDiptera_VIO/devel/.private/costmap_2d/setup.sh
