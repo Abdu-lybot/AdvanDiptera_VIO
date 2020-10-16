@@ -2,7 +2,7 @@
 import rospy
 from mavros_msgs.msg import GlobalPositionTarget, State, PositionTarget, BatteryStatus
 from mavros_msgs.srv import CommandBool, CommandTOL, SetMode
-from geometry_msgs.msg import PoseStamped, Twist
+from geometry_msgs.msg import PoseStamped, Twist ,Pose
 from sensor_msgs.msg import Imu, NavSatFix
 from std_msgs.msg import Float32, Float64, String
 from quaternion import Quaternion
@@ -10,8 +10,8 @@ import time
 import math
 import threading
 import yaml
-from gpio_diptera import Rpi_gpio_comm as Gpio_start
-from gpio_clean import Rpi_gpio_comm_off as Gpio_stop
+#from gpio_diptera import Rpi_gpio_comm as Gpio_start
+#from gpio_clean import Rpi_gpio_comm_off as Gpio_stop
 
 from random import seed
 from random import randint
@@ -32,10 +32,10 @@ class Arming_Modechng:
                     self.imu = value
                 if key == "gps":
                     self.gps = value
-                if key == "local_pose":
-                    self.local_pose = value
-                if key == "current_heading":
-                    self.current_heading = value
+                #if key == "local_pose":
+                    #self.local_pose = value
+                #if key == "current_heading":
+                    #self.current_heading = value
                 if key == "local_enu_position":
                     self.local_enu_position = value
                 if key == "cur_target_pose":
@@ -342,8 +342,8 @@ class Arming_Modechng:
 if __name__ == '__main__':
 
     try:
-        Gpio_start().start()
-        time.sleep(3.5)
+        #Gpio_start().start()
+        #time.sleep(3.5)
         print("Waiting for Advandiptera brain")
         arm = Arming_Modechng()
 
