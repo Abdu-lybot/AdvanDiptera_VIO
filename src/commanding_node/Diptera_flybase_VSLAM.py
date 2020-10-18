@@ -1,4 +1,4 @@
-#!/usr/bin/env python2.7
+#!/usr/bin/env python2
 
 ##
 #
@@ -119,28 +119,33 @@ class MavController:
         Arm the throttle, takeoff to a few feet, and set to guided mode
         """
         # Set to stabilize mode for arming
-        # mode_resp = self.mode_service(custom_mode="0")
-        mode_resp = self.mode_service(custom_mode="4")
+        mode_resp = self.mode_service(custom_mode="0")
+        #mode_resp = self.mode_service(custom_mode="4")
         self.arm()
 
         # Set to guided mode
         # mode_resp = self.mode_service(custom_mode="4")
 
         # Takeoff
-        takeoff_resp = self.takeoff_service(altitude=height)
+        #mode_takeoff = self.takeoff_service(altitude=height)
 
-        # return takeoff_resp
+        #return mode_takeoff
         return mode_resp
 
+    def guided(self):
+        #OFFBOARD
+        #mode_guided = self.mode_service(custom_mode="4")
+        mode_guided = self.mode_service(custom_mode='POSCTL')
+        return mode_guided
 
     def land(self):
         """
         Set in LAND mode, which should cause the UAV to descend directly,
         land, and disarm.
         """
-        # resp = self.mode_service(custom_mode="9")
-        self.mode_service(custom_mode="9")
-        self.disarm()
+        mode_land = self.mode_service(custom_mode="9")
+        #self.mode_service(custom_mode="9")
+        return mode_land
 
 
 def diptera_fly():
@@ -152,7 +157,9 @@ def diptera_fly():
 
     print("Takeoff")
     c.takeoff(0.5)
-    rospy.sleep(3)
+    #rospy.sleep(3)
+    c.guided()
+    rospy.sleep(0.1)
     c.goto_xyz_rpy(0, 0, 1.2, 0, 0, 0)
     rospy.sleep(10)
 
@@ -190,6 +197,7 @@ def diptera_fly():
 
     print("Landing")
     c.land()
+    c.disarm()
 
 
 if __name__ == "__main__":

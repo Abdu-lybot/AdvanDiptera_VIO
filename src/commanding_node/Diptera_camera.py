@@ -24,18 +24,18 @@ class Arming_Modechng:
 
     def __init__(self):
        
-        self.yamlpath = '/home/ubuntu/AdvanDiptera/src/commanding_node/params/data.yaml'
+        self.yamlpath = '/home/lybot/AdvanDiptera_VIO/src/commanding_node/params/data.yaml'
         with open(self.yamlpath) as file:
-            data = yaml.load(file)
+            data = yaml.safe_load(file)
             for key, value in data.items():
                 if key == "imu":
                     self.imu = value
                 if key == "gps":
                     self.gps = value
-                #if key == "local_pose":
-                    #self.local_pose = value
-                #if key == "current_heading":
-                    #self.current_heading = value
+                if key == "local_pose":
+                    self.local_pose = value
+                if key == "current_heading":
+                    self.current_heading = value
                 if key == "local_enu_position":
                     self.local_enu_position = value
                 if key == "cur_target_pose":
@@ -65,7 +65,7 @@ class Arming_Modechng:
         self.gps_sub = rospy.Subscriber("/mavros/global_position/global", NavSatFix, self.gps_callback) # Subscriber of the global position by mavros 
                                                                                                         # http://docs.ros.org/api/sensor_msgs/html/msg/NavSatFix.html
         self.imu_sub = rospy.Subscriber("/mavros/imu/data", Imu, self.imu_callback) # Subscriber of imu data by mavros http://docs.ros.org/api/sensor_msgs/html/msg/Imu.html
-        self.local_battery_sub = rospy.Subscriber("/mavros/battery", BatteryStatus, self.cb_local_battery)
+        #self.local_battery_sub = rospy.Subscriber("/mavros/battery", BatteryStatus, self.cb_local_battery)
 
         '''
         ros publishers
@@ -296,13 +296,13 @@ class Arming_Modechng:
 
     def take_off(self): 
         for i in range(800):
-            self.cur_target_pose = self.construct_target(self.local_pose.pose.position.x, self.local_pose.pose.position.y, self.local_pose.pose.position.z + 1, self.current_heading)
+            self.cur_target_pose = self.construct_target(self.local_pose.pose.position.x, self.local_pose.pose.position.y, 1.2 , self.current_heading)
             self.local_target_pub.publish(self.cur_target_pose)
             time.sleep(0.005)
 
     def land(self): 
         for i in range(800):
-            self.cur_target_pose = self.construct_target(self.local_pose.pose.position.x, self.local_pose.pose.position.y, self.local_pose.pose.position.z - 1, self.current_heading)
+            self.cur_target_pose = self.construct_target(self.local_pose.pose.position.x, self.local_pose.pose.position.y, 0.1, self.current_heading)
             self.local_target_pub.publish(self.cur_target_pose)
             time.sleep(0.005)
 
@@ -321,20 +321,19 @@ class Arming_Modechng:
             else:
                 print("Waiting for initialization.")
                 time.sleep(0.5)
-
+        self.arm_state = self.arm()
         self.cur_target_pose = self.construct_target(self.local_pose.pose.position.x, self.local_pose.pose.position.y, self.local_pose.pose.position.z, self.current_heading)
         self.local_target_pub.publish(self.cur_target_pose)
-
-        time.sleep(2)
+        time.sleep(0.5)
         
         for i in range(20):
             
-            self.arm_state = self.arm()    # arms the drone
+            #self.arm_state = self.arm()    # arms the drone
             self.cur_target_pose = self.construct_target(self.local_pose.pose.position.x, self.local_pose.pose.position.y, self.local_pose.pose.position.z, self.current_heading)
             self.local_target_pub.publish(self.cur_target_pose)
             self.offboard_state = self.offboard()
-            time.sleep(0.1)
-            
+            time.sleep(0.5)
+
 
 
 #########################################################################################################################
@@ -349,19 +348,23 @@ if __name__ == '__main__':
 
         # Arming + liftoff + hover
         arm.start()
-        arm.print_battery_status()
-        if arm.battery_voltage > 13:
+        print ("the drone has started and ready to lift off!")
+        #arm.print_battery_status()
+        #if arm.battery_voltage > 13:
 
-            arm.take_off()
+        #arm.take_off()
+        #print ("the drone has lifted off!")
 
-            arm.hover()
+        arm.hover()
+        print ("the drone is hovering!")
 
-            arm.land()
-  
-            arm.print_battery_status()
+        arm.land()
+        print ("the drone is landing!")
 
-        else:
-            rospy.logerr("Low battery level, disarming")
+            #arm.print_battery_status()
+
+#        else:
+#           rospy.logerr("Low battery level, disarming")
 
     except rospy.ROSInterruptException: pass
     
