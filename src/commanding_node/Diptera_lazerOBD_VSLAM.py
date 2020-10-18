@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.6
+#!/usr/bin/env python
 
 import rospy
 from sensor_msgs.msg import LaserScan
@@ -38,7 +38,7 @@ class Cloudlaser:
 
     def listiner(self):
         rospy.init_node("Diptera_Obstacle_detection")
-        rospy.Subscriber("/astra/scan", sensor_msgs.msg.LaserScan, self.cb_lzr)
+        rospy.Subscriber("/astra/scan", LaserScan, self.cb_lzr)
         rospy.spin()
         # self.rate.sleep()
 
